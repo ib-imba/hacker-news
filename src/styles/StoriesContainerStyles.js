@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -29,5 +29,25 @@ export const GlobalStyle = createGlobalStyle`
 export const StoriesContainerWrapper = styled.main`
   max-width: 1140px;
   padding: 20px 15px;
-  margin: auto
-`
+  margin: auto;
+`;
+export const StoryFooter = styled.footer`
+  position: fixed;
+  left: 16px;
+  bottom: 24px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  div {
+    margin-left: 8px;
+    margin-top: 4px;
+  }
+`;
